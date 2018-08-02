@@ -37,11 +37,6 @@
         <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
         <jquery.version>3.1.1</jquery.version>
         <bootstrap.version>3.3.7-1</bootstrap.version>
-
-
-            <maven.compiler.source>1.8</maven.compiler.source>
-            <maven.compiler.target>1.8</maven.compiler.target>
-
     </properties>
 
     <dependencyManagement>
@@ -132,7 +127,6 @@
                 <artifactId>spring-security-core</artifactId>
                 <version>3.1.0.RELEASE</version>
             </dependency>
-
 
         </dependencies>
     </dependencyManagement>

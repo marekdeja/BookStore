@@ -16,7 +16,7 @@ import pl.jstk.to.BookTo;
 public class BooksController {
 
     @Autowired
-    BookService bookService;
+    private BookService bookService;
 
     @GetMapping(value = "/books")
     public String showBooks(Model model) {
