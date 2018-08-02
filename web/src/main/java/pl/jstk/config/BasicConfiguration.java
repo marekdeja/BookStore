@@ -30,8 +30,8 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeRequests()
-                .antMatchers("/", "/books","/books/*", "/search", "/searching", "/greeting", "/webjars/**","/img/*", "/css/*", "/403").permitAll()
-                .antMatchers("/delete/*").hasRole("USER")
+                .antMatchers("/","/delete/*", "/books","/books/*", "/search", "/searching", "/greeting", "/webjars/**","/img/*", "/css/*", "/403").permitAll()
+               // .antMatchers("/delete/*").hasRole("USER")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin().loginPage("/login").permitAll()
