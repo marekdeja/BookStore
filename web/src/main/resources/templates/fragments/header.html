@@ -21,7 +21,7 @@
 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li >
+                    <li sec:authorize="isAuthenticated()">
                         <p style="color: white"> You are logged as:
                         <div sec:authentication="name" style="color: white"></div>
                         </p>

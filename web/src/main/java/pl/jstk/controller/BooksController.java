@@ -59,7 +59,7 @@ public class BooksController {
         return ViewNames.BOOKS;
     }
 
-    @Secured({"ROLE_USER", "ROLE_ADMIN"})
+    @Secured({"ROLE_ADMIN"})
     @GetMapping(value = "/delete/{id}")
     public String deleteBook(@RequestParam("id") Long id, Model model) {
         bookService.deleteBook(id);
